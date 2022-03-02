@@ -6,7 +6,7 @@ const registroContas = new mongoose.Schema({
     titulo: String,
     planodecontas: String,
     valor: Number,
-    pago: Boolean
+    createdAt: {type: Date, default: Date.now}
 
 })
 
